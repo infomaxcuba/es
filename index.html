@@ -30,12 +30,13 @@
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" href="inscripcion-directa.html">Inscripción directa</a>
                 <a class="dropdown-item" href="nacionalidad-menores.html">Nacionalidad menores</a>
-                <a class="dropdown-item" href="visado-familiar.html">Visado familiar </a>
-                <a class="dropdown-item" href="primer-pasaporte.html">Primer pasaporte </a>
-                <a class="dropdown-item" href="renovacion-pasaporte.html">Renovación pasaporte </a>
-                <a class="dropdown-item" href="transcripcion-matrimonio.html">Transcripción del matrimonio </a>
-                <a class="dropdown-item" href="inscripciones-literales.html">Certificaciones y literales </a>
-              </div>      
+                <a class="dropdown-item" href="visado-familiar.html">Visado familiar</a>
+                <a class="dropdown-item" href="primer-pasaporte.html">Primer pasaporte</a>
+                <a class="dropdown-item" href="renovacion-pasaporte.html">Renovación pasaporte</a>
+                <a class="dropdown-item" href="transcripcion-matrimonio.html">Transcripción del matrimonio</a>
+                <a class="dropdown-item" href="inscripciones-literales.html">Certificaciones y literales</a>
+                <a class="dropdown-item" href="antecedentes-penales.html">Antecedentes penales</a>
+              </div>     
 
               <li class="nav-item">
                 <a class="nav-link" href="about.html"> Contacto</a>
@@ -222,7 +223,23 @@
        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+       
+       <!-- Deshabilitar el clic derecho del ratón -->
 
+       <script src="jquery.min.js"></script>
+       <script type="text/javascript">
+        $(document).ready(function () {
+            //Disable full page
+            $("body").on("contextmenu",function(e){
+                return false;
+            });
+            
+            //Disable part of page
+            $("#id").on("contextmenu",function(e){
+                return false;
+            });
+        });
+        </script>
 
     
 </body>

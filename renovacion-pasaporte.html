@@ -194,7 +194,22 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 
+       <!-- Deshabilitar el clic derecho del ratón -->
 
+       <script src="jquery.min.js"></script>
+       <script type="text/javascript">
+        $(document).ready(function () {
+            //Disable full page
+            $("body").on("contextmenu",function(e){
+                return false;
+            });
+            
+            //Disable part of page
+            $("#id").on("contextmenu",function(e){
+                return false;
+            });
+        });
+        </script>
 
 </body>
 
